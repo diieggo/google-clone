@@ -1,0 +1,15 @@
+:root {
+    --lightgray: #80868b;
+    --white : #ffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
