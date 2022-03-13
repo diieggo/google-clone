@@ -1,7 +1,8 @@
 :root {
-    --lightgray: #80868b;
+    --lightgray: #5f6368;
     --white : #ffff;
     --blue: #4186f4;
+    --background: #202124;
 }
 
 * {
@@ -14,6 +15,10 @@
 html {
     font-size: 62.5%;
 }
+
+body {
+    background-color: var(--background);
+} 
 
 /* Header */
 
@@ -40,9 +45,17 @@ html {
 
 .item a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.4rem;
     padding: 0.7rem 1rem;
+}
+
+.item span {
+    color: var(--white);
+}
+
+.item .profile {
+    border-radius: 50%;
 }
 
 .item a:hover {
@@ -89,19 +102,31 @@ html {
 
 .search-icon,
 .mic-icon {
-    color: rgb(78, 78, 78);
+    color: #757575;
+}
+
+.mic-icon {
+    cursor: pointer;
 }
 
 .search-input {
     width: 100%;
     border: none;
     outline: none;
+    background: none;
+    color: var(--white);
     padding: 0.5rem 1rem;
 }
 
+.search-bar:hover {
+    background-color: #303134;
+    box-shadow: 0 1px 6px 0 #171717;
+    border-color: rgba(223,225,229,0);
+}
+
 .buttons-content button {
-    background-color: #eeeeee;
-    color: gray;
+    background-color: #303134;
+    color: #e8eaed;
     border: none;
     padding: 1rem;
     border-radius: 2px;
@@ -110,7 +135,7 @@ html {
 }
 
 .buttons-content button:hover {
-    outline: 1px solid gray;
+    outline: 1px solid #5f6368;
 }
 
 /* Footer */
@@ -119,10 +144,10 @@ html {
 }
 
 .country {
-    background-color: #eeeeee;
+    background-color: #171717;
     color: gray;
     padding: 0 3rem;
-    border-bottom: 1px solid rgb(216, 216, 216);
+    border-bottom: 1px solid #212327;
 }
 
 .country p {
@@ -134,7 +159,7 @@ html {
     display: flex;
     justify-content: space-between;
     padding: 2rem 3rem;
-    background-color: #eeeeee;
+    background-color: #171717;
 }
 
 .left {
